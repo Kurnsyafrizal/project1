@@ -1,0 +1,211 @@
+{
+  "selectedKey": "home  ",
+  "navigation": [
+    {
+      "title": "Home",
+      "icon": "sap-icon://home",
+      "expanded": true,
+      "key": "Home"
+    },
+    {
+      "title": "Chart",
+      "icon": "sap-icon://building",
+      "key": "Chart"
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://card",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item"
+        },
+        {
+          "title": "Child Item"
+        },
+        {
+          "title": "Child Item"
+        },
+        {
+          "title": "Child Item"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://action",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://action-settings",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://activate",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://activities",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://add",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://arobase",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://attachment",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://badge",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://basket",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://bed",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    },
+    {
+      "title": "Root Item",
+      "icon": "sap-icon://bookmark",
+      "expanded": false,
+      "items": [
+        {
+          "title": "Child Item 1"
+        },
+        {
+          "title": "Child Item 2"
+        },
+        {
+          "title": "Child Item 3"
+        }
+      ]
+    }
+  ]
+}
