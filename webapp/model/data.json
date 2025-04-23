@@ -13,21 +13,18 @@
       "key": "Chart"
     },
     {
-      "title": "Root Item",
+      "title": "Notes",
       "icon": "sap-icon://card",
-      "expanded": false,
+      "expanded": true,
+      "key": "Notes",
       "items": [
         {
-          "title": "Child Item"
+          "title": "Notes 1",
+          "key": "Notes1"
         },
         {
-          "title": "Child Item"
-        },
-        {
-          "title": "Child Item"
-        },
-        {
-          "title": "Child Item"
+          "title": "Notes 2",
+          "key": "Notes2"
         }
       ]
     },
@@ -41,9 +38,6 @@
         },
         {
           "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
         }
       ]
     },
@@ -57,9 +51,6 @@
         },
         {
           "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
         }
       ]
     },
@@ -73,9 +64,6 @@
         },
         {
           "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
         }
       ]
     },
@@ -89,9 +77,6 @@
         },
         {
           "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
         }
       ]
     },
@@ -105,107 +90,30 @@
         },
         {
           "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
         }
       ]
+    }
+  ],
+  "fixedNavigation": [
+    {
+      "title": "Quick Create",
+      "icon": "sap-icon://write-new",
+      "design": "Action",
+      "ariaHasPopup": "Dialog",
+      "selectable": false,
+      "press": "quickActionPress"
     },
     {
-      "title": "Root Item",
-      "icon": "sap-icon://arobase",
-      "expanded": false,
-      "items": [
-        {
-          "title": "Child Item 1"
-        },
-        {
-          "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
-        }
-      ]
+      "title": "Fixed Item 1",
+      "icon": "sap-icon://employee"
     },
     {
-      "title": "Root Item",
-      "icon": "sap-icon://attachment",
-      "expanded": false,
-      "items": [
-        {
-          "title": "Child Item 1"
-        },
-        {
-          "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
-        }
-      ]
+      "title": "Fixed Item 2",
+      "icon": "sap-icon://building"
     },
     {
-      "title": "Root Item",
-      "icon": "sap-icon://badge",
-      "expanded": false,
-      "items": [
-        {
-          "title": "Child Item 1"
-        },
-        {
-          "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
-        }
-      ]
-    },
-    {
-      "title": "Root Item",
-      "icon": "sap-icon://basket",
-      "expanded": false,
-      "items": [
-        {
-          "title": "Child Item 1"
-        },
-        {
-          "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
-        }
-      ]
-    },
-    {
-      "title": "Root Item",
-      "icon": "sap-icon://bed",
-      "expanded": false,
-      "items": [
-        {
-          "title": "Child Item 1"
-        },
-        {
-          "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
-        }
-      ]
-    },
-    {
-      "title": "Root Item",
-      "icon": "sap-icon://bookmark",
-      "expanded": false,
-      "items": [
-        {
-          "title": "Child Item 1"
-        },
-        {
-          "title": "Child Item 2"
-        },
-        {
-          "title": "Child Item 3"
-        }
-      ]
+      "title": "Fixed Item 3",
+      "icon": "sap-icon://card"
     }
   ]
 }

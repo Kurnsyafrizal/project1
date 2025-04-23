@@ -29,8 +29,23 @@ server:
       afterMiddleware: compression
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        backend:
+          - url: https://s4demo.soltius.co.id:44370
+            client: '720'
+            destination: SDS 720
+            path: /sap
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
         component: project1
         ui5Theme: sap_horizon
+    - name: sap-fe-mockserver
+      beforeMiddleware: csp
+      configuration:
+        mountPath: /
+        services:
+          - urlPath: /sap/opu/odata/sap/ZGW002_ILHAM_GEOMAP_SRV
+            metadataPath: ./webapp/localService/mainService/metadata.xml
+            mockdataPath: ./webapp/localService/mainService/data
+            generateMockData: true
+        annotations: []

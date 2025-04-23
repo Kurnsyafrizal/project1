@@ -6,6 +6,19 @@ metadata:
 type: application
 server:
   customMiddleware:
+    - name: ui5-middleware-simpleproxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+        backend:
+          - path: /sap
+            url: https://s4demo.soltius.co.id:44370
+            client: "720"
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
@@ -17,7 +30,7 @@ server:
           url: https://ui5.sap.com
         backend:
           - url: https://s4demo.soltius.co.id:44370
-            client: "720"
+            client: '720'
             destination: SDS 720
             path: /sap
     - name: fiori-tools-appreload
@@ -31,3 +44,13 @@ server:
       configuration:
         component: project1
         ui5Theme: sap_horizon
+    - name: sap-fe-mockserver
+      beforeMiddleware: csp
+      configuration:
+        mountPath: /
+        services:
+          - urlPath: /sap/opu/odata/sap/ZGW002_ILHAM_GEOMAP_SRV
+            metadataPath: ./webapp/localService/mainService/metadata.xml
+            mockdataPath: ./webapp/localService/mainService/data
+            generateMockData: true
+        annotations: []

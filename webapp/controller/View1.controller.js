@@ -33,28 +33,20 @@ sap.ui.define(
 
     return Controller.extend("project1.controller.View1", {
       onInit: function () {
-        var oView = this.getView();
-        var oModel = new sap.ui.model.odata.v2.ODataModel(
-          "sap/opu/odata/sap/ZGW002_ILHAM_GEOMAP_SRV/",
-          {
-            useBatch: false, // optional
-          }
+        var oSideBar = new sap.ui.model.json.JSONModel(
+          sap.ui.require.toUrl("project1/model/data.json")
         );
 
-        oView.setModel(oModel);
+        this.getView().setModel(oSideBar, "jsonModel");
+        // this.getView().setModel(oSideBar);
+
+        this._setToggleButtonTooltip(!Device.system.desktop);
+        // console.log(this.getView());
+
+        var oView = this.getView();
 
         this.adjustMyChartBox(oView, "idVizFrame1", "idCell1");
         this.adjustMyChartBox(oView, "idVizFrame2", "idCell2");
-        this.adjustMyChartBox(oView, "idVizFrame3", "idCell3");
-        this.adjustMyChartBox(oView, "idVizFrame4", "idCell4");
-        // this.adjustMyChartBox(oView, "idVizFrame5", "idCell5");
-        // this.adjustMyChartBox(oView, "idVizFrame6", "idCell6");
-
-        var oSideBar = new JSONModel(
-          sap.ui.require.toUrl("project1/model/data.json")
-        );
-        this.getView().setModel(oSideBar);
-        this._setToggleButtonTooltip(!Device.system.desktop);
       },
 
       adjustMyChartBox: function (oView, sChartId, sBlockId) {
@@ -70,14 +62,6 @@ sap.ui.define(
         oChartContainer.setAutoAdjustHeight(true);
         oView.byId(sBlockId).addContent(oChartContainer);
       },
-
-      // onInit: function () {
-      //   var oModel = new JSONModel(
-      //     sap.ui.require.toUrl("project1/model/data.json")
-      //   );
-      //   this.getView().setModel(oModel);
-      //   this._setToggleButtonTooltip(!Device.system.desktop);
-      // },
 
       onItemSelect: function (oEvent) {
         var oItem = oEvent.getParameter("item");
